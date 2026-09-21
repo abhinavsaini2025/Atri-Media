@@ -1,0 +1,268 @@
+export const services = [
+  {
+    slug: 'website-development',
+    icon: 'Globe',
+    name: 'Website Development',
+    short: 'Fast, custom-built sites that hold up under real traffic.',
+    category: 'Build',
+    description:
+      'We design and build websites from the ground up — marketing sites, product sites, dashboards, portals — coded by hand, not assembled from a template. Every site is fast by default and built to grow with your business.',
+    deliverables: [
+      'Custom design in Figma, built for your brand and content',
+      'Hand-coded front end (React, Next.js, or your stack of choice)',
+      'CMS setup so your team can edit copy and pages without a developer',
+      'Performance tuning, SEO foundations, and analytics wired in',
+    ],
+    process: [
+      { step: 'Discover', detail: 'We map your goals, audience, and content before touching a design tool.' },
+      { step: 'Design', detail: 'Wireframes, then high-fidelity screens, reviewed with you at every stage.' },
+      { step: 'Build', detail: 'Clean, maintainable code — no page-builder bloat, no plugin sprawl.' },
+      { step: 'Launch & tune', detail: 'We ship, monitor real performance, and fix what the data shows.' },
+    ],
+    stat: { value: '40+', label: 'sites shipped' },
+  },
+  {
+    slug: 'app-development',
+    icon: 'Smartphone',
+    name: 'App Development',
+    short: 'iOS, Android, and cross-platform apps people actually keep.',
+    category: 'Build',
+    description:
+      'From a first prototype to an app store launch, we build mobile products that are quick to use and cheap to maintain — using React Native or native code where it genuinely pays off.',
+    deliverables: [
+      'Product scoping and click-through prototype before a line of code',
+      'Cross-platform build (React Native) or native iOS/Android when needed',
+      'Backend and API integration, push notifications, in-app payments',
+      'App Store and Play Store submission, plus post-launch support',
+    ],
+    process: [
+      { step: 'Scope', detail: 'We define the smallest version that proves the idea works.' },
+      { step: 'Prototype', detail: 'A clickable prototype you can test with real users before we build.' },
+      { step: 'Build', detail: 'Sprint-based development with a working build in your hands every week.' },
+      { step: 'Ship & support', detail: 'Store submission, crash monitoring, and a maintenance plan after launch.' },
+    ],
+    stat: { value: '18', label: 'apps live on stores' },
+  },
+  {
+    slug: 'ai-tool-development',
+    icon: 'Sparkles',
+    name: 'AI Tool Development',
+    short: 'Custom AI features and internal tools built on your data.',
+    category: 'Build',
+    description:
+      'We build practical AI — chat assistants trained on your knowledge base, internal tools that cut hours of manual work, and AI features bolted into your existing product. No science project, just tools your team uses daily.',
+    deliverables: [
+      'Use-case audit to find where AI actually saves time or money',
+      'Custom assistants and copilots built on your own data',
+      'Workflow automations connecting AI to the tools you already run',
+      'Clear documentation so your team can maintain and extend it',
+    ],
+    process: [
+      { step: 'Audit', detail: 'We find the three places AI will save the most real hours.' },
+      { step: 'Prototype', detail: 'A working proof of concept, tested against real inputs, in days not months.' },
+      { step: 'Build', detail: 'Production-grade integration with guardrails, logging, and fallbacks.' },
+      { step: 'Train & handover', detail: 'We train your team and hand over a tool they can run without us.' },
+    ],
+    stat: { value: '12', label: 'AI tools in production' },
+  },
+  {
+    slug: 'performance-marketing',
+    icon: 'TrendingUp',
+    name: 'Performance Marketing',
+    short: 'Paid campaigns judged on revenue, not impressions.',
+    category: 'Grow',
+    description:
+      'Google, Meta, and LinkedIn campaigns built around one question: does this make money. We run tight tests, kill what underperforms fast, and put budget behind what converts.',
+    deliverables: [
+      'Full-funnel campaign strategy across search, social, and display',
+      'Creative testing — multiple ad variants live and measured weekly',
+      'Conversion tracking and attribution set up properly, before spend goes live',
+      'Monthly reporting in plain numbers: cost per lead, cost per sale, ROAS',
+    ],
+    process: [
+      { step: 'Baseline', detail: 'We audit existing accounts and set the numbers we are accountable to.' },
+      { step: 'Launch', detail: 'Campaigns go live in small, controlled tests before we scale spend.' },
+      { step: 'Optimize', detail: 'Weekly reviews cut losing ads and push budget to winners.' },
+      { step: 'Scale', detail: 'Once a channel proves out, we scale it without losing efficiency.' },
+    ],
+    stat: { value: '3.8x', label: 'avg. return on ad spend' },
+  },
+  {
+    slug: 'social-media-management',
+    icon: 'Users',
+    name: 'Social Media Management',
+    short: 'Content calendars, community, and growth across platforms.',
+    category: 'Grow',
+    description:
+      'We plan, shoot, write, and post — running your Instagram, LinkedIn, and X accounts like a real editorial operation, with a content calendar built around what your audience actually engages with.',
+    deliverables: [
+      'Monthly content calendar tied to product launches and campaigns',
+      'Original graphics, short-form video, and copywriting for every post',
+      'Community management — replies, DMs, and comment moderation',
+      'Monthly performance review with what to double down on next',
+    ],
+    process: [
+      { step: 'Audit', detail: 'We review your existing presence and competitors before planning anything.' },
+      { step: 'Plan', detail: 'A content calendar built around themes, formats, and key dates.' },
+      { step: 'Produce', detail: 'Content is shot, designed, written, and scheduled ahead of time.' },
+      { step: 'Engage & report', detail: 'Daily community management, reported monthly against growth goals.' },
+    ],
+    stat: { value: '2.1M+', label: 'monthly reach managed' },
+  },
+  {
+    slug: 'video-photo-editing',
+    icon: 'Clapperboard',
+    name: 'Video & Photo Editing',
+    short: 'Reels, ads, and product shoots edited to a brand standard.',
+    category: 'Grow',
+    description:
+      'Raw footage in, polished content out. We edit short-form reels, ad creatives, and product photography with consistent color, pacing, and captions that match your brand — turnaround measured in days, not weeks.',
+    deliverables: [
+      'Short-form video editing for Reels, TikTok, and YouTube Shorts',
+      'Ad creative cutdowns in multiple aspect ratios and lengths',
+      'Product and lifestyle photo retouching and color grading',
+      'Templated motion graphics for recurring content formats',
+    ],
+    process: [
+      { step: 'Brief', detail: 'We align on brand tone, pacing, and reference edits before starting.' },
+      { step: 'Rough cut', detail: 'A first pass delivered fast for direction, before the fine polish.' },
+      { step: 'Finish', detail: 'Color, sound design, captions, and motion graphics applied.' },
+      { step: 'Deliver', detail: 'Export packs sized correctly for every platform you need.' },
+    ],
+    stat: { value: '600+', label: 'assets edited per year' },
+  },
+  {
+    slug: 'ui-ux-design',
+    icon: 'PenTool',
+    name: 'UI & UX Design',
+    short: 'Interfaces designed around how people actually behave.',
+    category: 'Design',
+    description:
+      'Research-backed product and interface design — wireframes, design systems, and high-fidelity screens for web and mobile, built to hand directly to engineering without translation loss.',
+    deliverables: [
+      'User research and journey mapping before any screens are drawn',
+      'Wireframes and interactive prototypes for early testing',
+      'A documented design system: components, tokens, and states',
+      'Developer-ready handoff files with specs and assets',
+    ],
+    process: [
+      { step: 'Research', detail: 'We talk to real users and map the journey before designing anything.' },
+      { step: 'Wireframe', detail: 'Low-fidelity structure tested for flow before visual design begins.' },
+      { step: 'Design system', detail: 'Reusable components so the product stays consistent as it grows.' },
+      { step: 'Handoff', detail: 'Specs and assets packaged for engineering with nothing left ambiguous.' },
+    ],
+    stat: { value: '25+', label: 'design systems built' },
+  },
+  {
+    slug: 'branding-graphic-design',
+    icon: 'Palette',
+    name: 'Branding & Graphic Design',
+    short: 'Identity systems that hold together across every touchpoint.',
+    category: 'Design',
+    description:
+      'Logos, color systems, typography, and brand guidelines — plus the everyday graphic design (pitch decks, packaging, print) that keeps a brand looking like itself everywhere it shows up.',
+    deliverables: [
+      'Naming and positioning support where needed',
+      'Logo, color palette, typography, and full brand guideline document',
+      'Templates for decks, social, and print collateral',
+      'Ongoing graphic design support on a monthly retainer',
+    ],
+    process: [
+      { step: 'Position', detail: 'We define what the brand stands for before any visual work starts.' },
+      { step: 'Explore', detail: 'Multiple visual directions presented and stress-tested against the brief.' },
+      { step: 'Refine', detail: 'One direction developed into a full, documented identity system.' },
+      { step: 'Roll out', detail: 'Templates and guidelines so the brand stays consistent without us.' },
+    ],
+    stat: { value: '60+', label: 'brand identities built' },
+  },
+  {
+    slug: 'seo-content-marketing',
+    icon: 'Search',
+    name: 'SEO & Content Marketing',
+    short: 'Organic growth built on real search demand, not guesswork.',
+    category: 'Grow',
+    description:
+      'Technical SEO fixes, keyword-mapped content, and a publishing cadence built around what your audience is actually searching for — aimed at compounding traffic, not one-off spikes.',
+    deliverables: [
+      'Technical SEO audit — site speed, indexing, and structure fixes',
+      'Keyword research mapped to real buyer intent, not vanity volume',
+      'Monthly content production: articles, guides, and landing pages',
+      'Backlink outreach and quarterly ranking reports',
+    ],
+    process: [
+      { step: 'Audit', detail: 'We fix the technical issues holding your site back in search.' },
+      { step: 'Map', detail: 'Keywords are mapped to pages based on real intent and difficulty.' },
+      { step: 'Publish', detail: 'A steady content cadence, written for readers first, search second.' },
+      { step: 'Compound', detail: 'Quarterly reviews double down on what is ranking and driving traffic.' },
+    ],
+    stat: { value: '4.2x', label: 'avg. organic traffic growth' },
+  },
+  {
+    slug: 'ecommerce-solutions',
+    icon: 'ShoppingBag',
+    name: 'E-commerce Solutions',
+    short: 'Storefronts and checkout flows tuned to convert.',
+    category: 'Build',
+    description:
+      'Shopify, WooCommerce, and custom storefronts — built for fast checkout, clean product data, and the integrations (inventory, shipping, payments) that keep a store running without manual work.',
+    deliverables: [
+      'Storefront design and build on Shopify, WooCommerce, or custom stack',
+      'Checkout and cart optimization to reduce drop-off',
+      'Inventory, shipping, and payment gateway integrations',
+      'Post-launch conversion rate testing',
+    ],
+    process: [
+      { step: 'Plan', detail: 'We map the catalog, integrations, and checkout flow before building.' },
+      { step: 'Build', detail: 'Storefront built and connected to inventory, shipping, and payments.' },
+      { step: 'Test', detail: 'Checkout is stress-tested across devices before launch.' },
+      { step: 'Optimize', detail: 'Post-launch testing to lift conversion rate over time.' },
+    ],
+    stat: { value: '30+', label: 'stores launched' },
+  },
+  {
+    slug: 'cloud-devops',
+    icon: 'Cloud',
+    name: 'Cloud & DevOps',
+    short: 'Infrastructure that scales without paging you at 2am.',
+    category: 'Build',
+    description:
+      'Cloud architecture, CI/CD pipelines, and monitoring set up so deployments are boring and outages are rare — on AWS, GCP, or Azure, sized to what you actually need.',
+    deliverables: [
+      'Cloud architecture review and cost optimization',
+      'CI/CD pipeline setup for automatic, reliable deployments',
+      'Monitoring, alerting, and uptime dashboards',
+      'Security hardening and access control review',
+    ],
+    process: [
+      { step: 'Review', detail: 'We audit current infrastructure for cost, risk, and reliability gaps.' },
+      { step: 'Design', detail: 'An architecture sized to your actual traffic, not a guess.' },
+      { step: 'Automate', detail: 'CI/CD pipelines so deploys are routine, not risky events.' },
+      { step: 'Monitor', detail: 'Alerting set up so problems are caught before customers notice.' },
+    ],
+    stat: { value: '99.9%', label: 'avg. uptime managed' },
+  },
+  {
+    slug: 'maintenance-support',
+    icon: 'LifeBuoy',
+    name: 'Maintenance & Support',
+    short: 'Ongoing care so your site or app keeps running well.',
+    category: 'Support',
+    description:
+      'Monthly retainers for updates, bug fixes, security patches, and small feature requests — for teams who want their product looked after without hiring a full in-house team.',
+    deliverables: [
+      'Regular updates, security patches, and dependency upgrades',
+      'Bug triage with agreed response times',
+      'Small feature requests handled within the retainer',
+      'Monthly health report on performance and uptime',
+    ],
+    process: [
+      { step: 'Onboard', detail: 'We get familiar with your codebase and set response-time agreements.' },
+      { step: 'Monitor', detail: 'Automated monitoring flags issues before users report them.' },
+      { step: 'Fix', detail: 'Bugs and patches handled on an agreed turnaround.' },
+      { step: 'Report', detail: 'A monthly summary of what was fixed, updated, and improved.' },
+    ],
+    stat: { value: '99%', label: 'issues resolved on SLA' },
+  },
+]
+
+export const getServiceBySlug = (slug) => services.find((s) => s.slug === slug)

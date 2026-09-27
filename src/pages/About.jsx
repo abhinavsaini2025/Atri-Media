@@ -2,7 +2,7 @@ import PageHeader from '../components/PageHeader.jsx'
 import CTASection from '../components/CTASection.jsx'
 
 const timeline = [
-  { year: '2021', event: 'ATRI Media started as a two-person web design shop in Dehradun.' },
+  { year: '2021', event: 'Klyzy Digital started as a two-person web design shop in Dehradun.' },
   { year: '2022', event: 'Added performance marketing after clients kept asking who could run their ads too.' },
   { year: '2023', event: 'Built our first mobile app and grew the creative team to handle video in-house.' },
   { year: '2024', event: 'Shipped our first AI-powered client tool — a support copilot for a fintech client.' },
@@ -21,7 +21,7 @@ export default function About() {
       <PageHeader
         kicker="About Us"
         title="A studio built by people who got tired of hiring five vendors."
-        description="ATRI Media exists because good digital work shouldn't require managing a web agency, an app developer, a marketer, and an editor separately."
+        description="Klyzy Digital exists because good digital work shouldn't require managing a web agency, an app developer, a marketer, and an editor separately."
       />
 
       <section className="section">

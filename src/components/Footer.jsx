@@ -72,12 +72,12 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-14 flex flex-col gap-4 border-t border-white/10 pt-6 text-[13.5px] text-white/40 sm:flex-row sm:items-center sm:justify-between">
-          <p>© {new Date().getFullYear()} ATRI Media. All rights reserved.</p>
-          <div className="flex gap-6">
-            <Link to="/contact" className="hover:text-white/70">Privacy Policy</Link>
-            <Link to="/contact" className="hover:text-white/70">Terms of Service</Link>
-            <span>Dehradun, Uttarakhand, India</span>
+        <div className="mt-14 flex flex-col gap-4 border-t border-white/10 pt-6 text-[13.5px] text-white/80 sm:flex-row sm:items-center sm:justify-between">
+          <p className="text-white">© {new Date().getFullYear()} Klyzy Digital. All rights reserved.</p>
+          <div className="flex gap-6 text-white/80">
+            <Link to="/contact" className="hover:text-white">Privacy Policy</Link>
+            <Link to="/contact" className="hover:text-white">Terms of Service</Link>
+            <span className="text-white/80">Dehradun, Uttarakhand, India</span>
           </div>
         </div>
       </div>

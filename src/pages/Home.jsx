@@ -51,10 +51,10 @@ export default function Home() {
           <div>
             <p className="kicker text-gold">Websites · Apps · AI · Marketing</p>
             <h1 className="mt-4 max-w-xl font-display text-[42px] font-semibold leading-[1.08] text-white md:text-[58px]">
-              Every part of your digital presence, built by one studio.
+              Your Goals Are Closer Than You Think.
             </h1>
             <p className="mt-6 max-w-md text-[17px] leading-relaxed text-white/65">
-              ATRI Media designs and builds your website, app, and AI tools — then runs the
+              Klyzy Digital designs and builds your website, app, and AI tools — then runs the
               performance marketing, social, and content that put them in front of people.
             </p>
             <div className="mt-9 flex flex-wrap gap-4">
@@ -185,7 +185,7 @@ export default function Home() {
             <div>
               <p className="kicker">From the studio</p>
               <h2 className="mt-3 max-w-lg font-display text-3xl font-semibold leading-tight md:text-4xl">
-                ATRI News
+                Klyzy News
               </h2>
             </div>
             <Link to="/insights" className="flex items-center gap-1.5 text-[15px] font-medium text-ink/70 hover:text-ink">
@@ -207,18 +207,18 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Why ATRI */}
+      {/* Why Klyzy Digital */}
       <section className="section bg-panel">
         <div className="wrap grid gap-12 lg:grid-cols-2 lg:items-center">
           <div>
-            <p className="kicker">Why ATRI Media</p>
+            <p className="kicker">Why Klyzy Digital</p>
             <h2 className="mt-3 font-display text-3xl font-semibold leading-tight md:text-4xl">
               One studio instead of five vendors.
             </h2>
             <p className="mt-5 max-w-md text-[16px] leading-relaxed text-slate-soft">
               Most businesses end up stitching together a web agency, an app developer, a
-              marketing freelancer, and a video editor — none of whom talk to each other. ATRI
-              runs all of it under one roof, one calendar, and one point of contact.
+              marketing freelancer, and a video editor — none of whom talk to each other. Klyzy
+              Digital runs all of it under one roof, one calendar, and one point of contact.
             </p>
             <ul className="mt-8 space-y-4">
               {[

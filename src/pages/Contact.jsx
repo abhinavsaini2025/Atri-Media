@@ -26,13 +26,13 @@ export default function Contact() {
             <h2 className="mt-3 font-display text-2xl font-semibold text-ink">Contact details</h2>
 
             <div className="mt-7 space-y-5">
-              <a href="mailto:hello@atrimedia.com" className="flex items-center gap-4">
+              <a href="mailto:hello@klyzydigital.com" className="flex items-center gap-4">
                 <span className="grid h-11 w-11 shrink-0 place-items-center rounded-full bg-violet/10 text-violet">
                   <Mail className="h-5 w-5" />
                 </span>
                 <span>
                   <span className="block text-[13px] text-slate-soft">Email</span>
-                  <span className="block text-[15px] font-medium text-ink">hello@atrimedia.com</span>
+                  <span className="block text-[15px] font-medium text-ink">hello@klyzydigital.com</span>
                 </span>
               </a>
               <a href="tel:+911234567890" className="flex items-center gap-4">

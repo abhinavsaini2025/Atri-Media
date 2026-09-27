@@ -26,7 +26,7 @@ export const team = [
   {
     name: 'Kabir Shah',
     role: 'Head of AI Engineering',
-    bio: 'Builds the AI tools and copilots ATRI ships for clients. Formerly a machine learning engineer at a fintech scale-up.',
+    bio: 'Builds the AI tools and copilots Klyzy Digital ships for clients. Formerly a machine learning engineer at a fintech scale-up.',
     initials: 'KS',
   },
   {

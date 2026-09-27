@@ -13,9 +13,9 @@ export default {
           soft: '#8890A6',
         },
         gold: {
-          DEFAULT: '#F2B84B',
-          soft: '#F6CB74',
-          dim: '#C99530',
+          DEFAULT: '#F28C28',
+          soft: '#F6AB4B',
+          dim: '#D96D10',
         },
         violet: {
           DEFAULT: '#6C63FF',

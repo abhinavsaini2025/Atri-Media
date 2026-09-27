@@ -53,7 +53,7 @@ export default function Careers() {
                     <span>{role.type}</span>
                   </div>
                 </div>
-                <a href="mailto:careers@atrimedia.com" className="btn-line shrink-0">
+                <a href="mailto:careers@klyzydigital.com" className="btn-line shrink-0">
                   Apply
                 </a>
               </div>
@@ -64,7 +64,7 @@ export default function Careers() {
 
       <CTASection
         title="Don't see the right role?"
-        description="We keep a running list of strong applicants for when a seat opens. Send your portfolio to careers@atrimedia.com."
+        description="We keep a running list of strong applicants for when a seat opens. Send your portfolio to careers@klyzydigital.com."
       />
     </div>
   )

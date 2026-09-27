@@ -1,7 +1,7 @@
 export const testimonials = [
   {
     quote:
-      'ATRI rebuilt our site and took over paid ads in the same month. Cost per lead dropped by half before the quarter closed.',
+      'Klyzy Digital rebuilt our site and took over paid ads in the same month. Cost per lead dropped by half before the quarter closed.',
     name: 'Nikhil Bansal',
     role: 'CEO, Verdant Foods',
   },

@@ -11,8 +11,8 @@ export default function CTASection({
         <div className="pointer-events-none absolute -right-16 -top-24 h-72 w-72 rounded-full border border-gold/20" />
         <div className="pointer-events-none absolute -right-4 -top-8 h-40 w-40 rounded-full border border-violet/25" />
         <div className="relative max-w-xl">
-          <h2 className="font-display text-3xl font-semibold leading-tight md:text-4xl">{title}</h2>
-          <p className="mt-4 text-[16px] leading-relaxed text-white/65">{description}</p>
+          <h2 className="font-display text-3xl font-semibold leading-tight text-white md:text-4xl">{title}</h2>
+          <p className="mt-4 text-[16px] leading-relaxed text-white/80">{description}</p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Link to="/contact" className="btn-gold">
               Contact Now

@@ -21,7 +21,7 @@ export default function About() {
       <PageHeader
         kicker="About Us"
         title="A studio built by people who got tired of hiring five vendors."
-        description="Klyzy Digital exists because good digital work shouldn't require managing a web agency, an app developer, a marketer, and an editor separately."
+        description="Klyzy Digital is an Indian multinational IT company specializing in digital business transformation, AI, and internet-related products and services. We bring web, app, marketing, and creative work together in one team."
       />
 
       <section className="section">

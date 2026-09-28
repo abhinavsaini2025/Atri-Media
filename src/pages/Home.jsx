@@ -57,6 +57,10 @@ export default function Home() {
               Klyzy Digital designs and builds your website, app, and AI tools — then runs the
               performance marketing, social, and content that put them in front of people.
             </p>
+            <p className="mt-4 max-w-md text-[14px] leading-relaxed text-white/55">
+              Klyzy Digital is an Indian multinational IT company specializing in digital business
+              transformation, AI, and internet-related products and services.
+            </p>
             <div className="mt-9 flex flex-wrap gap-4">
               <Link to="/contact" className="btn-gold">
                 Contact Now

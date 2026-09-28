@@ -64,6 +64,25 @@
   .card {
     @apply border border-ink/10 bg-white p-7 transition-colors duration-200 hover:border-ink/25;
   }
+
+  .announcement-viewport {
+    mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+  }
+
+  .announcement-track {
+    animation: announcement-marquee 24s linear infinite;
+    will-change: transform;
+  }
+}
+
+@keyframes announcement-marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -75,5 +94,10 @@
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
+  }
+
+  .announcement-track {
+    animation: none !important;
+    transform: translateX(0);
   }
 }

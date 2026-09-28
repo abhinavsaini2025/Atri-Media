@@ -1,7 +1,8 @@
 import { Link } from 'react-router-dom'
-import { Instagram, Linkedin, Twitter, Youtube, ArrowUpRight } from 'lucide-react'
+import { Instagram, Linkedin, Twitter, Youtube, ArrowUpRight, MessageCircle } from 'lucide-react'
 import Logo from './Logo.jsx'
 import { services } from '../data/services.js'
+import { whatsappDisplayNumber, whatsappLink } from '../data/contact.js'
 
 export default function Footer() {
   return (
@@ -65,10 +66,11 @@ export default function Footer() {
             <p className="mt-5 text-[14.5px] leading-relaxed text-white/60">
               Tell us what you are building. We reply within one business day.
             </p>
-            <Link to="/contact" className="btn-gold mt-5">
-              Contact Now
+            <a href={whatsappLink} target="_blank" rel="noreferrer" className="btn-gold mt-5">
+              <MessageCircle className="h-4 w-4" />
+              WhatsApp {whatsappDisplayNumber}
               <ArrowUpRight className="h-4 w-4" />
-            </Link>
+            </a>
           </div>
         </div>
 

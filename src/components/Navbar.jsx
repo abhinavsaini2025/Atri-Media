@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Link, NavLink, useLocation } from 'react-router-dom'
 import { Menu, X, ChevronDown, ArrowUpRight } from 'lucide-react'
-import Logo from './Logo.jsx'
+import Logo from './HeaderLogo.jsx'
 import Icon from './Icon.jsx'
 import { services } from '../data/services.js'
 
@@ -38,6 +38,26 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-ink/10 bg-paper/90 backdrop-blur">
+      <div className="overflow-hidden bg-void text-white">
+        <div className="announcement-viewport min-h-9 py-2 text-[11px] font-semibold uppercase tracking-[0.08em] sm:text-[12px]">
+          <div className="announcement-track flex w-max items-center">
+            {[0, 1].map((copy) => (
+              <div
+                key={copy}
+                aria-hidden={copy === 1}
+                className="flex items-center gap-8 whitespace-nowrap px-6 md:px-10"
+              >
+                <span className="text-gold-soft">Explore now</span>
+                <span className="text-white/35">✦</span>
+                <span>Digital experiences built for ambitious brands</span>
+                <span className="text-gold-soft">Start a conversation</span>
+                <span className="text-white/35">✦</span>
+                <span className="text-white/70">Web · Apps · AI · Growth</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
       <div className="wrap flex h-[76px] items-center justify-between">
         <Logo />
 

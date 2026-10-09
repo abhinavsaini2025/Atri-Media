@@ -50,7 +50,7 @@ export default function Navbar() {
                 <span className="text-gold-soft">Explore now</span>
                 <span className="text-white/35">✦</span>
                 <span>AI, Cloud, and Product Engineering with a 96% success rate.</span>
-                <span className="text-gold-soft">Uncover proof of Pearl Organisation’s impact across 21000+ digital deliveries in 20+ industries.</span>
+                <span className="text-gold-soft">Uncover proof of Klyzy Digital impact across 21000+ digital deliveries in 20+ industries.</span>
                 <span className="text-white/35">✦</span>
                 <span className="text-white/70">Serving clients in 150+ countries since 2017.</span>
               </div>

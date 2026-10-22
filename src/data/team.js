@@ -1,5 +1,15 @@
 export const team = [
   {
+    name: 'Aslam Siddiqui',
+    role: 'Director of Operations & Strategy',
+    pillar: 'The Director',
+    focus: 'Human connection, clear communication, and seamless day-to-day execution.',
+    vision:
+      'Great work happens when the right minds collaborate without friction. We make working with our team feel natural, transparent, and completely organized—from the first brainstorm to everyday delivery.',
+    initials: 'MS',
+    image: '/Mohammed-Aslam-Siddiqui.jpeg',
+  },
+  {
     name: 'Nahida Naaz',
     role: 'Co-Founder & CEO',
     pillar: 'The CEO',
@@ -19,14 +29,5 @@ export const team = [
     initials: 'AS',
     image: '/Abhinav-Saini.jpg',
   },
-  {
-    name: 'Aslam Siddiqui',
-    role: 'Director of Operations & Strategy',
-    pillar: 'The Director',
-    focus: 'Human connection, clear communication, and seamless day-to-day execution.',
-    vision:
-      'Great work happens when the right minds collaborate without friction. We make working with our team feel natural, transparent, and completely organized—from the first brainstorm to everyday delivery.',
-    initials: 'MS',
-    image: '/Mohammed-Aslam-Siddiqui.jpeg',
-  },
+  
 ]

@@ -37,9 +37,8 @@ export default function KeyPeople() {
                 >
                   {/* Portrait */}
                   <div
-                    className={`relative min-h-[320px] overflow-hidden bg-void md:col-span-2 md:min-h-[440px] ${
-                      reversed ? 'md:order-2' : ''
-                    }`}
+                    className={`relative min-h-[320px] overflow-hidden bg-void md:col-span-2 md:min-h-[440px] ${reversed ? 'md:order-2' : ''
+                      }`}
                   >
                     <img
                       src={leader.image}
@@ -68,9 +67,8 @@ export default function KeyPeople() {
 
                   {/* Details */}
                   <div
-                    className={`flex flex-col justify-center gap-8 p-7 md:col-span-3 md:p-10 ${
-                      reversed ? 'md:order-1' : ''
-                    }`}
+                    className={`flex flex-col justify-center gap-8 p-7 md:col-span-3 md:p-10 ${reversed ? 'md:order-1' : ''
+                      }`}
                   >
                     <div>
                       <p className="text-xs font-semibold uppercase tracking-[0.14em] text-violet">
@@ -91,9 +89,6 @@ export default function KeyPeople() {
                       >
                         &rdquo;
                       </span>
-                      <p className="text-xs font-semibold uppercase tracking-[0.14em] text-gold-dim">
-                        Our vision
-                      </p>
                       <p className="mt-2 max-w-xl text-sm leading-relaxed text-ink md:text-base">
                         {leader.vision}
                       </p>

@@ -1,8 +1,14 @@
 import { Link } from 'react-router-dom'
-import { Instagram, Linkedin, Twitter, Youtube, ArrowUpRight, MessageCircle } from 'lucide-react'
+import { Instagram, Linkedin, Twitter, ArrowUpRight, MessageCircle } from 'lucide-react'
 import Logo from './Logo.jsx'
 import { services } from '../data/services.js'
 import { whatsappDisplayNumber, whatsappLink } from '../data/contact.js'
+
+const socialLinks = [
+  { label: 'X', href: 'https://x.com/klyzydigital', Icon: Twitter },
+  { label: 'Instagram', href: 'https://www.instagram.com/klyzydigital/', Icon: Instagram },
+  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/klyzy-digital-06b4b3441/', Icon: Linkedin },
+]
 
 export default function Footer() {
   return (
@@ -16,13 +22,16 @@ export default function Footer() {
               them worth building.
             </p>
             <div className="mt-6 flex gap-3">
-              {[Instagram, Linkedin, Twitter, Youtube].map((I, i) => (
+              {socialLinks.map(({ label, href, Icon: SocialIcon }) => (
                 <a
-                  key={i}
-                  href="#"
+                  key={label}
+                  href={href}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label={`Klyzy Digital on ${label}`}
                   className="grid h-9 w-9 place-items-center rounded-full border border-white/15 text-white/70 hover:border-gold hover:text-gold"
                 >
-                  <I className="h-4 w-4" />
+                  <SocialIcon className="h-4 w-4" />
                 </a>
               ))}
             </div>
@@ -47,7 +56,7 @@ export default function Footer() {
               {[
                 ['About Us', '/about'],
                 ['Careers', '/careers'],
-                ['Key People', '/key-people'],
+                ['Leadership', '/key-people'],
                 ['Case Studies', '/case-studies'],
                 ['Insights', '/insights'],
                 ['Testimonials', '/testimonials'],
@@ -77,9 +86,9 @@ export default function Footer() {
         <div className="mt-14 flex flex-col gap-4 border-t border-white/10 pt-6 text-[13.5px] text-white/80 sm:flex-row sm:items-center sm:justify-between">
           <p className="text-white">© {new Date().getFullYear()} Klyzy Digital. All rights reserved.</p>
           <div className="flex gap-6 text-white/80">
-            <Link to="/contact" className="hover:text-white">Privacy Policy</Link>
-            <Link to="/contact" className="hover:text-white">Terms of Service</Link>
-            <span className="text-white/80">Dehradun, Uttarakhand, India</span>
+            <Link to="/privacy-policy" className="hover:text-white">Privacy Policy</Link>
+            <Link to="/terms-of-service" className="hover:text-white">Terms of Service</Link>
+            <span className="text-white/80">Karimnagar, Telangana, India</span>
           </div>
         </div>
       </div>

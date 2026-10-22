@@ -5,6 +5,9 @@ export const insights = [
     excerpt:
       'The AI features that get used solve a specific, recurring task. Everything else is a demo. Here is how we scope AI work so it survives contact with real users.',
     date: 'Aug 2026',
+    image:
+      'https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1400&q=85',
+    imageAlt: 'Abstract glowing AI artwork in a dark blue palette',
   },
   {
     title: 'The real cost of a slow website, in leads not milliseconds',
@@ -12,6 +15,9 @@ export const insights = [
     excerpt:
       'Page speed reports talk in seconds and scores. We translate that into what it actually costs a business in lost leads and abandoned carts.',
     date: 'Jul 2026',
+    image:
+      'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=85',
+    imageAlt: 'Developer working at a laptop with code on screen',
   },
   {
     title: 'A performance marketing budget that survives a bad month',
@@ -19,6 +25,9 @@ export const insights = [
     excerpt:
       'Most ad accounts panic-cut budget the moment a metric dips. Here is the review cadence we use to tell a bad week from a broken campaign.',
     date: 'Jul 2026',
+    image:
+      'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=900&q=85',
+    imageAlt: 'Analytics charts displayed on a laptop screen',
   },
   {
     title: 'Building a brand system that survives a rebrand-happy founder',

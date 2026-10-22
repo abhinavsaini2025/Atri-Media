@@ -73,6 +73,10 @@
     animation: announcement-marquee 24s linear infinite;
     will-change: transform;
   }
+
+  .news-enter {
+    animation: news-enter 650ms cubic-bezier(0.2, 0.7, 0.2, 1) both;
+  }
 }
 
 @keyframes announcement-marquee {
@@ -83,6 +87,42 @@
   to {
     transform: translateX(-50%);
   }
+}
+
+@keyframes news-enter {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes vaidik-typing {
+  0%, 60%, 100% {
+    transform: translateY(0);
+    opacity: 0.45;
+  }
+
+  30% {
+    transform: translateY(-3px);
+    opacity: 1;
+  }
+}
+
+.vaidik-typing-dot {
+  animation: vaidik-typing 1s ease-in-out infinite;
+}
+
+.vaidik-typing-dot:nth-child(2) {
+  animation-delay: 120ms;
+}
+
+.vaidik-typing-dot:nth-child(3) {
+  animation-delay: 240ms;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -99,5 +139,9 @@
   .announcement-track {
     animation: none !important;
     transform: translateX(0);
+  }
+
+  .vaidik-typing-dot {
+    animation: none !important;
   }
 }

@@ -16,6 +16,8 @@ import Testimonials from './pages/Testimonials.jsx'
 import KeyPeople from './pages/KeyPeople.jsx'
 import About from './pages/About.jsx'
 import Contact from './pages/Contact.jsx'
+import PrivacyPolicy from './pages/PrivacyPolicy.jsx'
+import TermsOfService from './pages/TermsOfService.jsx'
 import BookTechnician from './pages/BookTechnician.jsx'
 import ClientLogin from './pages/ClientLogin.jsx'
 import NotFound from './pages/NotFound.jsx'
@@ -39,6 +41,8 @@ export default function App() {
         <Route path="/key-people" element={<KeyPeople />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/terms-of-service" element={<TermsOfService />} />
         <Route path="/book-technician" element={<BookTechnician />} />
         <Route path="/client-login" element={<ClientLogin />} />
         <Route path="*" element={<NotFound />} />

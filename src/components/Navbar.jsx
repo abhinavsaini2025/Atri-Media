@@ -12,12 +12,16 @@ const moreLinks = [
   { label: 'Client Case Studies', to: '/case-studies' },
   { label: 'Industry Insights', to: '/industry-insights' },
   { label: 'Testimonials', to: '/testimonials' },
-  { label: 'Key People', to: '/key-people' },
+  { label: 'Leadership', to: '/key-people' },
   { label: 'About Us', to: '/about' },
   { label: 'Contact Us', to: '/contact' },
   { label: 'Book My Technician', to: '/book-technician' },
   { label: 'Client Login', to: '/client-login' },
 ]
+
+const mobileMoreLinks = moreLinks.filter(({ to }) =>
+  ['/key-people', '/about', '/contact'].includes(to),
+)
 
 const navLinkClass = ({ isActive }) =>
   `text-[15px] font-medium transition-colors ${
@@ -50,9 +54,9 @@ export default function Navbar() {
                 <span className="text-gold-soft">Explore now</span>
                 <span className="text-white/35">✦</span>
                 <span>AI, Cloud, and Product Engineering with a 96% success rate.</span>
-                <span className="text-gold-soft">Uncover proof of Klyzy Digital impact across 21000+ digital deliveries in 20+ industries.</span>
+                <span className="text-gold-soft">2,100 digital deliveries across 45+ countries.</span>
                 <span className="text-white/35">✦</span>
-                <span className="text-white/70">Serving clients in 150+ countries since 2017.</span>
+                <span className="text-white/70">Serving clients since 2025.</span>
               </div>
             ))}
           </div>
@@ -209,7 +213,7 @@ export default function Navbar() {
             </button>
             {mobileSection === 'more' && (
               <div className="flex flex-col border-l border-ink/10 pl-4">
-                {moreLinks.map((l) => (
+                {mobileMoreLinks.map((l) => (
                   <Link key={l.to} to={l.to} className="py-2.5 text-[14.5px] text-ink/70">
                     {l.label}
                   </Link>

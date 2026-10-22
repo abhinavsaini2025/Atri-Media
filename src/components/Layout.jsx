@@ -1,6 +1,7 @@
 import { Outlet } from 'react-router-dom'
 import Navbar from './Navbar.jsx'
 import Footer from './Footer.jsx'
+import VaidikChat from './VaidikChat.jsx'
 import WhatsAppFloat from './WhatsAppFloat.jsx'
 
 export default function Layout() {
@@ -12,6 +13,7 @@ export default function Layout() {
       </main>
       <Footer />
       <WhatsAppFloat />
+      <VaidikChat />
     </div>
   )
 }

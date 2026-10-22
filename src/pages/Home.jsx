@@ -183,28 +183,82 @@ export default function Home() {
       </section>
 
       {/* News */}
-      <section className="section">
+      <section className="relative overflow-hidden bg-[#F7F6F2] py-16 md:py-24">
+        <div className="pointer-events-none absolute -right-32 top-10 h-80 w-80 rounded-full bg-violet/[0.06] blur-3xl" />
         <div className="wrap">
-          <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+          <div className="relative flex flex-col gap-5 md:flex-row md:items-end md:justify-between">
             <div>
-              <p className="kicker">From the studio</p>
-              <h2 className="mt-3 max-w-lg font-display text-3xl font-semibold leading-tight md:text-4xl">
+              <p className="kicker">Ideas, in focus <span className="ml-2 text-ink/30">/ 01—03</span></p>
+              <h2 className="mt-3 max-w-lg font-display text-4xl font-semibold leading-tight tracking-tight md:text-5xl">
                 Klyzy News
               </h2>
+              <p className="mt-3 max-w-md text-[15px] leading-relaxed text-slate-soft">
+                Fresh thinking on technology, growth, and the work happening behind the scenes.
+              </p>
             </div>
-            <Link to="/insights" className="flex items-center gap-1.5 text-[15px] font-medium text-ink/70 hover:text-ink">
+            <Link
+              to="/insights"
+              className="group inline-flex items-center gap-2 self-start text-[15px] font-semibold text-ink transition-colors hover:text-violet md:self-auto"
+            >
               Read all insights
-              <ArrowUpRight className="h-4 w-4" />
+              <ArrowUpRight className="h-4 w-4 transition-transform duration-200 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
             </Link>
           </div>
 
-          <div className="mt-12 grid gap-5 md:grid-cols-3">
-            {insights.slice(0, 3).map((post) => (
-              <article key={post.title} className="card flex flex-col">
-                <p className="text-[13px] font-medium text-violet">{post.category}</p>
-                <h3 className="mt-3 font-display text-[18px] font-semibold leading-snug text-ink">{post.title}</h3>
-                <p className="mt-3 flex-1 text-[14px] leading-relaxed text-slate-soft">{post.excerpt}</p>
-                <p className="mt-5 text-[13px] text-slate-soft">{post.date}</p>
+          <div className="relative mt-10 grid gap-9 md:mt-14 md:grid-cols-[1.15fr_0.85fr] md:gap-12">
+            {insights.slice(0, 3).map((post, index) => (
+              <article
+                key={post.title}
+                className={`news-enter min-w-0 ${index === 0 ? 'md:row-span-2' : 'flex gap-5 border-t border-ink/10 pt-6 md:gap-6'}`}
+                style={{ animationDelay: `${index * 120}ms` }}
+              >
+                {index === 0 ? (
+                  <>
+                    <div className="group relative aspect-[16/9] overflow-hidden rounded-2xl bg-ink/10">
+                      <img
+                        src={post.image}
+                        alt={post.imageAlt}
+                        className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]"
+                        loading="lazy"
+                      />
+                      <span className="absolute left-4 top-4 rounded-full bg-white/90 px-3 py-1.5 text-xs font-semibold text-ink backdrop-blur">
+                        {post.category}
+                      </span>
+                    </div>
+                    <div className="pt-5">
+                      <p className="text-[13px] font-medium text-slate-soft">{post.date} <span className="mx-1.5">·</span> 5 min read</p>
+                      <h3 className="mt-3 max-w-xl font-display text-2xl font-semibold leading-tight tracking-tight text-ink md:text-3xl">
+                        {post.title}
+                      </h3>
+                      <p className="mt-3 max-w-xl text-[15px] leading-relaxed text-slate-soft">{post.excerpt}</p>
+                      <Link
+                        to="/insights"
+                        aria-label={`Read ${post.title}`}
+                        className="group mt-5 inline-flex items-center gap-2 text-sm font-semibold text-ink transition-colors hover:text-violet"
+                      >
+                        Read the story
+                        <ArrowUpRight className="h-4 w-4 transition-transform duration-200 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
+                      </Link>
+                    </div>
+                  </>
+                ) : (
+                  <>
+                    <div className="group relative aspect-square w-[34%] shrink-0 overflow-hidden rounded-xl bg-ink/10">
+                      <img
+                        src={post.image}
+                        alt={post.imageAlt}
+                        className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.06]"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div className="flex min-w-0 flex-col items-start py-1">
+                      <p className="text-[12px] font-semibold uppercase tracking-[0.12em] text-violet">{post.category}</p>
+                      <h3 className="mt-2 font-display text-lg font-semibold leading-snug text-ink md:text-xl">{post.title}</h3>
+                      <p className="mt-2 line-clamp-2 text-[14px] leading-relaxed text-slate-soft">{post.excerpt}</p>
+                      <p className="mt-auto pt-3 text-[12px] text-slate-soft">{post.date}</p>
+                    </div>
+                  </>
+                )}
               </article>
             ))}
           </div>

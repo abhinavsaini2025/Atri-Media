@@ -2,11 +2,8 @@ import PageHeader from '../components/PageHeader.jsx'
 import CTASection from '../components/CTASection.jsx'
 
 const timeline = [
-  { year: '2021', event: 'Klyzy Digital started as a two-person web design shop in Dehradun.' },
-  { year: '2022', event: 'Added performance marketing after clients kept asking who could run their ads too.' },
-  { year: '2023', event: 'Built our first mobile app and grew the creative team to handle video in-house.' },
-  { year: '2024', event: 'Shipped our first AI-powered client tool — a support copilot for a fintech client.' },
-  { year: '2026', event: 'Now a 20-person studio running full-stack digital work for 40+ active clients.' },
+  { year: '2025', event: 'Klyzy Digital began operations, bringing web, app, AI, and marketing services together.' },
+  { year: 'Today', event: 'We have completed 2,100 digital deliveries for clients across 45+ countries.' },
 ]
 
 const values = [
